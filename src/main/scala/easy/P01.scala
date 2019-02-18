@@ -5,7 +5,7 @@ package easy
   */
 object P01 extends App {
 
-  def last (list : List[Int]): Int = {
+  def last [A] (list : List[A]): A = {
 
     if (list == null)
       throw new IllegalArgumentException
