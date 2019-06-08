@@ -13,6 +13,14 @@ object P08 {
  }
 
  //a,a,a,a,b,b
- def compress(list:List[Char]) = comp(list.tail, List(list.head)).reverse
+ def compress[A](list:List[A]) = { 
+    //Using Tail Recursion
+    //comp(list.tail, List(list.head)).reverse
+    
+    //Functional
+    list.foldRight(List[A]()) {
+      (h, r) =>  if (r.isEmpty || h != r.head) h :: r else r
+    }
+ }
 
 }
