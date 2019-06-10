@@ -14,6 +14,7 @@ object P07 {
       }
     }
     flatten(Nil, list)
+
   }
 
 }

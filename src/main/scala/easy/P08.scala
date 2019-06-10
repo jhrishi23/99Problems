@@ -12,8 +12,7 @@ object P08 {
     }
  }
 
- //a,a,a,a,b,b
- def compress[A](list:List[A]) = { 
+ def compress[A](list:List[A]) = {
     //Using Tail Recursion
     //comp(list.tail, List(list.head)).reverse
     
